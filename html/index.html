@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="Visualize the weeks of your life!">
+    <meta name='author' content='Elana Kopelevich'>
+    <meta name="favicon" content="content" src="#">
+    <title>Search your Github profile</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Custom Styles -->
+
+      <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="../css/main.css" media="screen" title="custom-main" charset="utf-8">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js">
+
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav navbar navbar-inverse navbar-static-top">
+        <a class="navbar-brand" href="#">Search your GitHub Account!</a>
+        <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#event-modal">About</button></li>
+    </header>
+    <main>
+      <div class="container">
+        <div class="jumbotron">
+          <h1>What are you doing on GitHub?</h1>
+          <h2>What is anybody doing, really?</h2>
+        </div>
+        <div class="search panel col-md-4 col-sm-6 col-xs-12">
+          <div class="panel-heading">
+            <h3 class="panel-title">Search Information</h3>
+          </div>
+          <form class="" action="index.html" method="post">
+            <label for="username">GitHub Username</label>
+            <input type="text" id="username" placeholder="" name="username">
+            <select id="option" name="option">
+              <option value="/events">All Activity</option>
+              <option value="/starred">Starred</option>
+              <option value="/subscriptions">Watching</option>
+              <option value="/followers">Followers</option>
+              <option value="/following">Following</option>
+            </select>
+            <button type="button" id="username-search" class="btn btn-primary pull-right" name="submit" value="submit">Search</button>
+          </form>
+        </div><!-- end search panel -->
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <div class="panel results">
+            <h3 class="details"></h3>
+            <div class="result"></div>
+          </div><!-- end inner results panel -->
+        </div><!-- end outer results panel -->
+      </div><!-- end container -->
+    </main>
+    <footer>
+
+    </footer>
+
+    <!-- Modal Window for 'About' -->
+    <div class="modal fade" id="event-modal">
+      <div class="modal-dialog">
+        <div class="modal-content form-box">
+          <div class="modal-header">
+            <button type="button" name="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+            <h1 class="modal-title">This page is a Learning Exercise</h1>
+            <p>
+              I'm learning about semantic HTML, Bootstrap, AJAX, APIs and  a little bit of SASS. I used GitHub's API and jQuery's GET method to access user data from GitHub and post it to this page.
+            </p>
+          </div>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../javascript/main.js">
+
+    </script>
+  </body>
+</html>

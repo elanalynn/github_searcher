@@ -1,0 +1,33 @@
+body {
+  color: #444;
+  background-color: #444; }
+
+nav button {
+  margin: 8px 20px; }
+
+.jumbotron {
+  background-color: #5887be;
+  color: #FFF;
+  font-family: 'Special Elite';
+  text-align: center; }
+  .jumbotron h2 {
+    font-size: 2em; }
+
+.search {
+  background-color: #f7ed62;
+  padding: 20px; }
+  .search select {
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 40px; }
+  .search .btn {
+    font-size: 1em;
+    margin-top: 20px;
+    width: 100px; }
+
+.results {
+  background-color: #c7c9c9;
+  padding: 20px;
+  margin-right: -15px; }
+
+/*# sourceMappingURL=main.css.map */
